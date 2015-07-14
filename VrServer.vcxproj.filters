@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{7f36fbe2-e95b-4e2b-a2ed-076db86b045b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network">
+      <UniqueIdentifier>{bd68c1dd-1b8e-4f5e-a28e-6eb9ae2910bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataBase">
+      <UniqueIdentifier>{6cacc1f7-07e9-4a5c-b733-d7ca0aee75a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataBase\model">
+      <UniqueIdentifier>{ac019d61-46bf-489b-a60d-626ddea298b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataBase\data_access">
+      <UniqueIdentifier>{315dd72d-7940-4809-a6d8-204dacd131d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataBase\business_logic">
+      <UniqueIdentifier>{891d1e22-695f-4897-a19a-30e46c50d23c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network\connection">
+      <UniqueIdentifier>{4d0980fc-53c9-4d12-a510-db7b839f3a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network\message">
+      <UniqueIdentifier>{2a7bc59f-93af-416c-afe6-bb9ce13fa97d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\KnowledgeSystem">
+      <UniqueIdentifier>{229df4e9-796e-4305-8b92-61bc12ede243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{81a76bb7-8ffc-4a44-a2a2-dccee5c18eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities\utils">
+      <UniqueIdentifier>{4ccd64eb-13b3-465c-920f-27b1e2c871f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Test">
+      <UniqueIdentifier>{2bab66cf-494f-4176-a57c-385e2e7c6ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{a02ea39c-0011-440d-8eae-dcd8eba66595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database">
+      <UniqueIdentifier>{93fb26d3-9a5c-44b8-b00c-a9e827c6241c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database\model">
+      <UniqueIdentifier>{e4fd54aa-acfb-4c3c-9ec7-e3d5b36defdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database\business_logic">
+      <UniqueIdentifier>{f5cdbca8-5291-490a-ba8e-ae2b3643ba1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database\data_access">
+      <UniqueIdentifier>{d0a38e9b-3379-4930-8408-f8d956be1d79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network\message">
+      <UniqueIdentifier>{f2572e5d-dcc8-46b6-a2d6-966b0710fe88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network\connection">
+      <UniqueIdentifier>{50efba19-9350-46f7-91f2-efdf9e1b1a00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Test">
+      <UniqueIdentifier>{ca7afbb7-682e-4759-8a1a-835b680fbd76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\KnowledgeSystem">
+      <UniqueIdentifier>{f948f36d-e56c-4b75-b817-42e2d812af1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils\log">
+      <UniqueIdentifier>{c793b3e6-c9d8-4d86-b174-a26d23eb06c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities\log">
+      <UniqueIdentifier>{b591357e-6a74-49aa-9ae6-6dbf26953258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils\utils">
+      <UniqueIdentifier>{689e9eb2-765d-4899-81de-e59199d00411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataBase\data_access\unrealized">
+      <UniqueIdentifier>{e8518423-4b51-40ee-8efc-e7d7f388468e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="server1_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>Source Files\utils\log</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageForwarder.cpp">
+      <Filter>Source Files\Network\connection</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageDispatcher.cpp">
+      <Filter>Source Files\Network\connection</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionManager.cpp">
+      <Filter>Source Files\Network\connection</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionServer.cpp">
+      <Filter>Source Files\Network\connection</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionBase.cpp">
+      <Filter>Source Files\Network\connection</Filter>
+    </ClCompile>
+    <ClCompile Include="BootstrapServer.cpp">
+      <Filter>Source Files\Network\connection</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifi-odb.cxx">
+      <Filter>Source Files\Database\model</Filter>
+    </ClCompile>
+    <ClCompile Include="WifiSignalManager.cpp">
+      <Filter>Source Files\Database\business_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="mysqlconn_wrapper.cpp">
+      <Filter>Source Files\Database\data_access</Filter>
+    </ClCompile>
+    <ClCompile Include="WifiMessage.pb.cc">
+      <Filter>Source Files\Network\message</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTester.cpp">
+      <Filter>Source Files\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="DBConfig.cpp">
+      <Filter>Source Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="KnowledgeSystem.cpp">
+      <Filter>Source Files\KnowledgeSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="DBHelper.cpp">
+      <Filter>Source Files\Database\data_access</Filter>
+    </ClCompile>
+    <ClCompile Include="utility.cpp">
+      <Filter>Source Files\utils\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageHandler.cpp">
+      <Filter>Source Files\Network\connection</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityMessageAdapter.cpp">
+      <Filter>Source Files\utils\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="geom.cpp">
+      <Filter>Source Files\utils\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MysqlDataHelper.cpp">
+      <Filter>Source Files\Database\data_access</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <Filter>Header Files\Network\message</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Header Files\Utilities\log</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility.h">
+      <Filter>Header Files\Utilities\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageDispatcher.h">
+      <Filter>Header Files\Network\connection</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageForwarder.h">
+      <Filter>Header Files\Network\connection</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageHandler.h">
+      <Filter>Header Files\Network\connection</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionManager.h">
+      <Filter>Header Files\Network\connection</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionServer.h">
+      <Filter>Header Files\Network\connection</Filter>
+    </ClInclude>
+    <ClInclude Include="codec.h">
+      <Filter>Header Files\Network\connection</Filter>
+    </ClInclude>
+    <ClInclude Include="InternalMessage.h">
+      <Filter>Header Files\Network\message</Filter>
+    </ClInclude>
+    <ClInclude Include="BootstrapServer.h">
+      <Filter>Header Files\Network\connection</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionBase.h">
+      <Filter>Header Files\Network\connection</Filter>
+    </ClInclude>
+    <ClInclude Include="WifiSignalManager.h">
+      <Filter>Header Files\DataBase\business_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi-odb.hxx">
+      <Filter>Header Files\DataBase\model</Filter>
+    </ClInclude>
+    <ClInclude Include="KnowledgeSystem.h">
+      <Filter>Header Files\KnowledgeSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTester.h">
+      <Filter>Header Files\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WifiMessage.pb.h">
+      <Filter>Header Files\Network\message</Filter>
+    </ClInclude>
+    <ClInclude Include="database.hxx">
+      <Filter>Header Files\DataBase\data_access</Filter>
+    </ClInclude>
+    <ClInclude Include="wifi.hxx">
+      <Filter>Header Files\DataBase\model</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="geom.h">
+      <Filter>Header Files\Utilities\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="DBHelper.h">
+      <Filter>Header Files\DataBase\data_access</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityMessageAdapter.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="mysqlconn_wrapper.h">
+      <Filter>Header Files\DataBase\data_access\unrealized</Filter>
+    </ClInclude>
+    <ClInclude Include="MysqlDataHelper.h">
+      <Filter>Header Files\DataBase\data_access\unrealized</Filter>
+    </ClInclude>
+    <ClInclude Include="DBConfig.h">
+      <Filter>Header Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>Header Files\DataBase\business_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectService.h">
+      <Filter>Header Files\DataBase\data_access</Filter>
+    </ClInclude>
+    <ClInclude Include="odbdata.h">
+      <Filter>Header Files\DataBase\model</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewManager.h">
+      <Filter>Header Files\DataBase\business_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewService.h">
+      <Filter>Header Files\DataBase\data_access</Filter>
+    </ClInclude>
+    <ClInclude Include="adaptor.h">
+      <Filter>Header Files\Utilities\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="server.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="0034.ICO">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="wifi-odb.ixx">
+      <Filter>Header Files\DataBase\model</Filter>
+    </None>
+    <None Include="wifi.sql">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VrServer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

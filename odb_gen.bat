@@ -1,0 +1,1 @@
+odb -d mysql --profile boost --generate-query --generate-schema --generate-session %1

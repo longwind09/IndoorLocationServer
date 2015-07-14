@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VrServer", "VrServer.vcxproj", "{D93D7D77-E370-4E76-890F-D199224BBBC4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ACM_test", "..\ACM_test\ACM_test.vcxproj", "{77F0AF71-40CF-4B32-9CE2-613DA24609DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D93D7D77-E370-4E76-890F-D199224BBBC4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D93D7D77-E370-4E76-890F-D199224BBBC4}.Debug|Win32.Build.0 = Debug|Win32
+		{D93D7D77-E370-4E76-890F-D199224BBBC4}.Release|Win32.ActiveCfg = Release|Win32
+		{D93D7D77-E370-4E76-890F-D199224BBBC4}.Release|Win32.Build.0 = Release|Win32
+		{77F0AF71-40CF-4B32-9CE2-613DA24609DF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{77F0AF71-40CF-4B32-9CE2-613DA24609DF}.Debug|Win32.Build.0 = Debug|Win32
+		{77F0AF71-40CF-4B32-9CE2-613DA24609DF}.Release|Win32.ActiveCfg = Release|Win32
+		{77F0AF71-40CF-4B32-9CE2-613DA24609DF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

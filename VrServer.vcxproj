@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D93D7D77-E370-4E76-890F-D199224BBBC4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VrServer</RootNamespace>
+    <ProjectName>VrServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT);$(LOGCPP_HOME)\include;$(PROTOBUF_HOME)\include;$(PROTOBUF_HOME)\LIB;$(ODBLIB_HOME);$(ODBLIB_MYSQL_HOME);$(ODBLIB_BOOST_HOME);$(MYSQL_HOME)\include;$(MYSQLCONNECTOR_HOME)\INCLUDE</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm152 %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)\BIN\VC10\lib;$(LOGCPP_HOME)\lib;$(PROTOBUF_HOME)\lib;$(ODBLIB_HOME)\LIB;$(ODBLIB_MYSQL_HOME)\LIB;$(ODBLIB_BOOST_HOME)\LIB;$(MYSQL_HOME)\LIB\DEBUG;$(MYSQLCONNECTOR_HOME)\LIB</AdditionalLibraryDirectories>
+      <AdditionalDependencies>log4cplusUD.lib;libprotobuf-d.lib;libprotobuf-lite-d.lib;libprotoc-d.lib;odb-d.lib;odb-boost-d.lib;odb-mysql-d.lib;mysqlcppconn.lib;mysqlcppconn-static.lib</AdditionalDependencies>
+      <HeapReserveSize>4194304</HeapReserveSize>
+      <HeapCommitSize>
+      </HeapCommitSize>
+      <StackReserveSize>4194304</StackReserveSize>
+      <StackCommitSize>
+      </StackCommitSize>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep />
+    <CustomBuildStep>
+      <Inputs>
+      </Inputs>
+    </CustomBuildStep>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(TINYXML_HOME);$(LUA_HOME)\lua5.2_dynamic\include;$(LUABIND_HOME);$(XPATH_HOME)\include;$(BOOST_HOME);$(LOGCPP_HOME)\include;$(PROTOBUF_HOME)\include;$(JSONCPP_HOME)\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm126 %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>lua52.lib;luabind.lib;tinyxpath.lib;log4cplusU.lib;jsoncpp.lib;libprotobuf.lib;libprotobuf-lite.lib;libprotoc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_HOME)\stage\lib;$(TINYXML_HOME)\ReleasetinyxmlSTL;$(TINYXML_HOME)\Releasetinyxml;$(LUA_HOME)\lua5.2_dynamic\lib;$(LUABIND_HOME)\lib;$(LOGCPP_HOME)\lib;$(XPATH_HOME)\lib;$(JSONCPP_HOME)\lib;$(PROTOBUF_HOME)\LIB;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BootstrapServer.cpp" />
+    <ClCompile Include="ConnectionBase.cpp" />
+    <ClCompile Include="ConnectionManager.cpp" />
+    <ClCompile Include="ConnectionServer.cpp" />
+    <ClCompile Include="MysqlDataHelper.cpp" />
+    <ClCompile Include="DBHelper.cpp" />
+    <ClCompile Include="EntityMessageAdapter.cpp" />
+    <ClCompile Include="geom.cpp" />
+    <ClCompile Include="DBConfig.cpp" />
+    <ClCompile Include="KnowledgeSystem.cpp" />
+    <ClCompile Include="MessageDispatcher.cpp" />
+    <ClCompile Include="MessageForwarder.cpp" />
+    <ClCompile Include="MessageHandler.cpp" />
+    <ClCompile Include="mysqlconn_wrapper.cpp" />
+    <ClCompile Include="MyTester.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="server.cpp" />
+    <ClCompile Include="server1_main.cpp" />
+    <ClCompile Include="ServerCommand.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="utility.cpp" />
+    <ClCompile Include="wifi-odb.cxx" />
+    <ClCompile Include="WifiMessage.pb.cc" />
+    <ClCompile Include="WifiSignalManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adaptor.h" />
+    <ClInclude Include="BootstrapServer.h" />
+    <ClInclude Include="codec.h" />
+    <ClInclude Include="ConnectionBase.h" />
+    <ClInclude Include="ConnectionManager.h" />
+    <ClInclude Include="ConnectionServer.h" />
+    <ClInclude Include="ObjectManager.h" />
+    <ClInclude Include="ObjectService.h" />
+    <ClInclude Include="database.hxx" />
+    <ClInclude Include="MysqlDataHelper.h" />
+    <ClInclude Include="DBHelper.h" />
+    <ClInclude Include="EntityMessageAdapter.h" />
+    <ClInclude Include="geom.h" />
+    <ClInclude Include="DBConfig.h" />
+    <ClInclude Include="InternalMessage.h" />
+    <ClInclude Include="KnowledgeSystem.h" />
+    <ClInclude Include="MessageDispatcher.h" />
+    <ClInclude Include="MessageForwarder.h" />
+    <ClInclude Include="MessageHandler.h" />
+    <ClInclude Include="mysqlconn_wrapper.h" />
+    <ClInclude Include="MyTester.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="message.h" />
+    <ClInclude Include="odbdata.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="server.h" />
+    <ClInclude Include="ServerCommand.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="utility.h" />
+    <ClInclude Include="ViewManager.h" />
+    <ClInclude Include="ViewService.h" />
+    <ClInclude Include="wifi-odb.hxx" />
+    <ClInclude Include="wifi.hxx" />
+    <ClInclude Include="WifiMessage.pb.h" />
+    <ClInclude Include="WifiSignalManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="0034.ICO" />
+    <None Include="server.ico" />
+    <None Include="wifi-odb.ixx" />
+    <None Include="wifi.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VrServer.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
